@@ -1,0 +1,538 @@
+/* CSS Document */
+.container {
+	position: relative;
+	width: 960px;
+	margin: 0 auto;
+	padding: 0;
+}
+.column, .columns {
+	float: left;
+	display: inline;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+.row {
+	margin-bottom: 20px;
+}
+/* Nested Column Classes */
+.column.alpha, .columns.alpha {
+	margin-left: 0;
+}
+.column.omega, .columns.omega {
+	margin-right: 0;
+}
+/* Base Grid */	
+.container .one.column {
+	width: 60px;
+}
+.container .two.columns {
+	width: 140px;
+}
+.container .three.columns {
+	width: 220px;
+}
+.container .four.columns {
+	width: 300px;
+}
+.container .five.columns {
+	width: 380px;
+}
+.container .six.columns {
+	width: 460px;
+}
+.container .seven.columns {
+	width: 540px;
+}
+.container .eight.columns {
+	width: 620px;
+}
+.container .nine.columns {
+	width: 700px;
+}
+.container .ten.columns {
+	width: 780px;
+}
+.container .eleven.columns {
+	width: 860px;
+}
+.container .twelve.columns {
+	width: 940px;
+}
+/* Offsets */
+	
+.container .offset-by-one {
+	padding-left: 80px;
+}
+.container .offset-by-two {
+	padding-left: 160px;
+}
+.container .offset-by-three {
+	padding-left: 240px;
+}
+.container .offset-by-four {
+	padding-left: 320px;
+}
+.container .offset-by-five {
+	padding-left: 400px;
+}
+.container .offset-by-six {
+	padding-left: 480px;
+}
+.container .offset-by-seven {
+	padding-left: 560px;
+}
+.container .offset-by-eight {
+	padding-left: 640px;
+}
+.container .offset-by-nine {
+	padding-left: 720px;
+}
+.container .offset-by-ten {
+	padding-left: 800px;
+}
+.container .offset-by-eleven {
+	padding-left: 880px;
+}
+/* Column Layouts */
+.one_half, .one_third, .two_third,  .three_fourth, .one_fourth, .one_fifth,  .two_fifth, .three_fifth, .four_fifth,  .one_sixth, .five_sixth {
+	margin-right: 2%;
+	margin-left: 2%;
+	position: relative;
+	float: left;
+}
+.one_half {
+	width: 48%;
+}
+.one_third {
+	width: 30.6666%;
+}
+.one_fourth {
+	width: 22%;
+}
+.one_fifth {
+	width: 16.8%;
+}
+.one_sixth {
+	width: 13.3333%;
+}
+.two_third {
+	width: 65.3332%;
+}
+.two_fourth {
+	width: 48%;
+}
+.two_fifth {
+	width: 37.6%;
+}
+.two_sixth {
+	width: 30.6666%;
+}
+.three_fourth {
+	width: 74%;
+}
+.three_fifth {
+	width: 58.4%;
+}
+.three_sixth {
+	width: 47.9998%;
+}
+.four_fifth {
+	width: 79.2%;
+}
+.four_sixth {
+	width: 65.3332%;
+}
+.five_sixth {
+	width: 82.6665%;
+}
+.firstcols {
+	margin-left: 0px !important;
+}
+.last, .lastcols {
+	margin-right: 0px !important;
+	clear: right;
+}
+
+
+
+/* #Tablet (Portrait)
+================================================== */
+
+    /* Note: Design for a width of 768px */
+
+    @media only screen and (min-width: 768px) and (max-width: 959px) {
+.container {
+	width: 768px;
+}
+.container .column,  .container .columns {
+	margin-left: 10px;
+	margin-right: 10px;
+}
+.column.alpha, .columns.alpha {
+	margin-left: 0;
+	margin-right: 10px;
+}
+.column.omega, .columns.omega {
+	margin-right: 0;
+	margin-left: 10px;
+}
+.container .one.column {
+	width: 44px;
+}
+.container .two.columns {
+	width: 108px;
+}
+.container .three.columns {
+	width: 172px;
+}
+.container .four.columns {
+	width: 236px;
+}
+.container .five.columns {
+	width: 300px;
+}
+.container .six.columns {
+	width: 364px;
+}
+.container .seven.columns {
+	width: 428px;
+}
+.container .eight.columns {
+	width: 492px;
+}
+.container .nine.columns {
+	width: 556px;
+}
+.container .ten.columns {
+	width: 620px;
+}
+.container .eleven.columns {
+	width: 684px;
+}
+.container .twelve.columns {
+	width: 748px;
+}
+/* Offsets */
+.container .offset-by-one {
+	padding-left: 64px;
+}
+.container .offset-by-two {
+	padding-left: 128px;
+}
+.container .offset-by-three {
+	padding-left: 192px;
+}
+.container .offset-by-four {
+	padding-left: 256px;
+}
+.container .offset-by-five {
+	padding-left: 320px;
+}
+.container .offset-by-six {
+	padding-left: 384px;
+}
+.container .offset-by-seven {
+	padding-left: 448px;
+}
+.container .offset-by-eight {
+	padding-left: 512px;
+}
+.container .offset-by-nine {
+	padding-left: 576px;
+}
+.container .offset-by-ten {
+	padding-left: 640px;
+}
+.container .offset-by-eleven {
+	padding-left: 704px;
+}
+}
+
+
+/*  #Mobile (Portrait)
+================================================== */
+
+    /* Note: Design for a width of 320px */
+
+    @media only screen and (max-width: 767px) {
+.container {
+	width: 300px;
+}
+.columns, .column {
+	margin: 0;
+}
+.container .one.column,  .container .two.columns,  .container .three.columns,  .container .four.columns,  .container .five.columns,  .container .six.columns,  .container .seven.columns,  .container .eight.columns,  .container .nine.columns,  .container .ten.columns,  .container .eleven.columns,  .container .twelve.columns {
+	width: 300px;
+	margin-bottom: 10px;
+}
+/* Offsets */
+		
+.container .offset-by-one,  .container .offset-by-two,  .container .offset-by-three,  .container .offset-by-four,  .container .offset-by-five,  .container .offset-by-six,  .container .offset-by-seven,  .container .offset-by-eight,  .container .offset-by-nine,  .container .offset-by-ten,  .container .offset-by-eleven {
+	padding-left: 0px;
+}
+/* Column Layouts */
+.one_half, .one_third, .two_third,  .three_fourth, .one_fourth, .one_fifth,  .two_fifth, .three_fifth, .four_fifth,  .one_sixth, .five_sixth {
+	margin-right: 0;
+	margin-left: 0;
+	position: relative;
+	float: left;
+	margin-bottom: 20px
+}
+.one_half,  .one_third,  .one_fourth,  .one_fifth,  .one_sixth,  .two_third,  .two_fourth,  .two_fifth,  .two_sixth,  .three_fourth,  .three_fifth,  .three_sixth,  .four_fifth,  .four_sixth {
+	width: 96%;
+}
+.firstcols {
+	margin-left: 0px !important;
+	clear: left
+}
+.last, .lastcols {
+	margin-right: 0px !important;
+	clear: left;
+}
+}
+
+
+/* #Mobile (Landscape)
+================================================== */
+
+    /* Note: Design for a width of 480px */
+
+    @media only screen and (min-width: 480px) and (max-width: 767px) {
+.container {
+	width: 420px;
+}
+.columns, .column {
+	margin: 0;
+}
+.container .one.column,  .container .two.columns,  .container .three.columns,  .container .four.columns,  .container .five.columns,  .container .six.columns,  .container .seven.columns,  .container .eight.columns,  .container .nine.columns,  .container .ten.columns,  .container .eleven.columns,  .container .twelve.columns {
+	width: 420px;
+}
+}
+/* #Clearing
+================================================== */
+
+    /* Self Clearing Goodness */
+.container:after {
+	content: "\0020";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+/* Use clearfix class on parent to clear nested columns,
+    or wrap each row of columns in a <div class="row"> */
+.clearfix:before,  .clearfix:after,  .row:before,  .row:after {
+	content: '\0020';
+	display: block;
+	overflow: hidden;
+	visibility: hidden;
+	width: 0;
+	height: 0;
+}
+.row:after,  .clearfix:after {
+	clear: both;
+}
+.row,  .clearfix {
+	zoom: 1;
+}
+/* You can also use a <br class="clear" /> to clear columns */
+.clear, .clr {
+	clear: both;
+	display: block;
+	overflow: hidden;
+	visibility: hidden;
+	width: 0;
+	height: 0;
+}
+/* The Nivo Slider styles */
+.nivoSlider {
+	position:relative;
+	width:100%;
+	height:auto;
+	overflow: hidden;
+}
+.nivoSlider img {
+	position:absolute;
+	top:0px;
+	left:0px;
+	max-width: none;
+}
+.nivo-main-image {
+	display: block !important;
+	position: relative !important; 
+	width: 100% !important;
+}
+
+/* If an image is wrapped in a link */
+.nivoSlider a.nivo-imageLink {
+	position:absolute;
+	top:0px;
+	left:0px;
+	width:100%;
+	height:100%;
+	border:0;
+	padding:0;
+	margin:0;
+	z-index:6;
+	display:none;
+}
+/* The slices and boxes in the Slider */
+.nivo-slice {
+	display:block;
+	position:absolute;
+	z-index:5;
+	height:100%;
+	top:0;
+}
+.nivo-box {
+	display:block;
+	position:absolute;
+	z-index:5;
+	overflow:hidden;
+}
+.nivo-box img { display:block; }
+
+/* Caption styles */
+.nivo-caption {
+	position:absolute;
+	right:0px;
+	bottom:0px;
+	top:0;
+	width:26%;
+	z-index:8;
+	padding:35px 28px;
+	overflow: hidden;
+	display: none;
+}
+
+.nivo-caption h1{font-size:20px; font-family:'Oswald', sans-serif, arial; font-weight:400; margin-bottom:12px; text-transform:uppercase; line-height:34px}
+.titlesliderproperty{margin-bottom:8px;}
+.priceslider{font-size:20px; font-family:'Oswald', sans-serif, arial; font-weight:400; display:block; margin-bottom:12px;}
+.slidetext{padding:15px 0 25px 0;}
+.nivo-caption .button{font-size:12px; padding:8px 15px 9px 15px;}
+
+.nivo-caption p {
+	padding:5px;
+	margin:0;
+}
+.nivo-caption a {
+	display:inline !important;
+}
+.nivo-html-caption {
+    display:none;
+}
+/* Direction nav styles (e.g. Next & Prev) */
+.nivo-directionNav a {
+	position:absolute;
+	top:45%;
+	z-index:9;
+	cursor:pointer;
+}
+.nivo-prevNav {
+	left:0px;
+}
+.nivo-nextNav {
+	right:0px;
+}
+/* Control nav styles (e.g. 1,2,3...) */
+.nivo-controlNav {
+	text-align:center;
+	padding:0;
+}
+.nivo-controlNav a {
+	cursor:pointer;
+}
+.nivo-controlNav a.active {
+	font-weight:bold;
+}
+
+
+/* Nivo Slider Default Theme */
+.theme-default{height:370px}
+.theme-default .nivoSlider {
+	position:relative;
+	background:#fff url(../images/loading.gif) no-repeat 50% 50%;
+}
+.theme-default .nivoSlider img {
+	position:absolute;
+	top:0px;
+	left:0px;
+	display:none;
+}
+.theme-default .nivoSlider a {
+	border:0;
+	display:block;
+}
+
+.theme-default .nivo-controlNav {
+	text-align: center;
+	padding:0;
+	right:220px;
+	bottom:20px;
+	z-index:30;
+	position:absolute;
+}
+.theme-default .nivo-controlNav a {
+	display:inline-block;
+	width:11px;
+	height:11px;
+	border:0;
+	margin: 0 4px;
+	background: #fff;
+	background: rgba(255,255,255,1);
+	cursor: pointer; text-indent: -9999px;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	-o-border-radius: 20px;
+	border-radius:20px;
+}
+.theme-default .nivo-controlNav a.active {
+	background: #ed6451; background: rgba(237,100,80,1);
+}
+
+.theme-default .nivo-directionNav a {
+	display:block;
+	width:30px;
+	height:30px;
+	text-indent:-9999px;
+	border:0;
+	opacity: 0;
+	-webkit-transition: all 200ms ease-in-out;
+    -moz-transition: all 200ms ease-in-out;
+    -o-transition: all 200ms ease-in-out;
+    transition: all 200ms ease-in-out;
+}
+.theme-default:hover .nivo-directionNav a { opacity: 1; }
+.theme-default a.nivo-nextNav {
+	background-position:-30px 0;
+	left:50px;
+	top:10px
+}
+.theme-default a.nivo-prevNav {
+	left:15px;
+	top:10px
+}
+
+.theme-default .nivo-caption {
+    font-family: Helvetica, Arial, sans-serif;
+}
+.theme-default .nivo-caption a {
+}
+.theme-default .nivo-caption a:hover {
+}
+
+.theme-default .nivo-controlNav.nivo-thumbs-enabled {
+	width: 100%;
+}
+.theme-default .nivo-controlNav.nivo-thumbs-enabled a {
+	width: auto;
+	height: auto;
+	background: none;
+	margin-bottom: 5px;
+}
+.theme-default .nivo-controlNav.nivo-thumbs-enabled img {
+	display: block;
+	width: 120px;
+
+	height: auto;
+}
